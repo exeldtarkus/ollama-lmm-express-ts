@@ -29,7 +29,7 @@
   COPY --from=builder /app/build ./build
   
   # Expose the app port
-  EXPOSE 8017
+  EXPOSE 8010
   
   # Start the app using the compiled JS file
   CMD ["node", "build/src/index.js"]

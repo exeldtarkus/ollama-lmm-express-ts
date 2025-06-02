@@ -69,11 +69,22 @@ graph TD
 3. **Setup `.env`**
 
    ```env
-   PORT=3000
-   OLLAMA_BASE_URL=http://localhost:11434
-   OLLAMA_LEARNING_MODEL=llama3
-   GOOGLE_MAPS_API_KEY=your_google_maps_api_key
-   GOOGLE_MAPS_BASE_URL=https://maps.googleapis.com/maps/api
+    APP_ENV=dev
+    APP_DEBUG=true
+    APP_URL=localhost
+    APP_PORT=8010
+    APP_STATIC_TOKEN=testKey123213123131APPSTATICTOKEN
+    APP_TIMEZONE=Asia/Jakarta
+
+    APP_ACCESS_TOKEN_SECRET=testKey123213123131APPACCESSTOKENSECRET
+    APP_REFRESH_TOKEN_SECRET=testKey123213123131APPREFRESHTOKENSECRET
+    APP_USER_DEFAULT_PASSWORD=testKey123213123131APPUSERDEFAULTPASSWORD
+
+    GOOGLE_MAPS_BASE_URL=https://maps.googleapis.com/maps
+    GOOGLE_MAPS_API_KEY= testKey123213123131,
+    OLLAMA_BASE_URL=http://localhost:11434
+    OLLAMA_LEARNING_MODEL=llama3.2
+
    ```
 
 4. **Run Ollama model**
@@ -102,7 +113,7 @@ graph TD
 ## 📘 API Documentation (Swagger)
 
 Visit:
-`http://localhost:3000/docs`
+`http://localhost:8010/docs`
 
 > Documentation is generated using Swagger JSDoc and exposed via `swagger-ui-express`.
 

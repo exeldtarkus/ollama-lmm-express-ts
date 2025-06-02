@@ -67,8 +67,8 @@ This is a backend-only Node.js + TypeScript project that integrates a local LLM 
 1. **Clone project**
 
    ```bash
-   git clone https://github.com/your-username/llm-smart-search-backend.git
-   cd llm-smart-search-backend
+   git clone https://github.com/exeldtarkus/ollama-lmm-express-ts.git
+   cd ollama-lmm-express-ts
    ```
 
 2. **Install dependencies**

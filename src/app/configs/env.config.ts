@@ -6,7 +6,7 @@ const envSchema = TypeEnv.object({
   APP_DEBUG: TypeEnv.string()
     .transform(val => val === 'true')
     .pipe(TypeEnv.boolean()),
-  APP_URL: TypeEnv.string().default('localhost'),
+  APP_URL: TypeEnv.string().default('http://localhost:8010'),
   APP_PORT: TypeEnv.string().default('8010'),
   APP_STATIC_TOKEN: TypeEnv.string(),
   APP_TIMEZONE: TypeEnv.string().default('Asia/Jakarta'),

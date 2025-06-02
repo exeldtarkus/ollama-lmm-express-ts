@@ -82,7 +82,7 @@ This is a backend-only Node.js + TypeScript project that integrates a local LLM 
    ```env
     APP_ENV=dev
     APP_DEBUG=true
-    APP_URL=localhost
+    APP_URL=http://localhost:8010
     APP_PORT=8010
     APP_STATIC_TOKEN=testKey123213123131APPSTATICTOKEN
     APP_TIMEZONE=Asia/Jakarta

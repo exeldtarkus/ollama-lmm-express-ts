@@ -1,0 +1,50 @@
+{
+  "name": "ollama-lmm-express-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/src/index.js",
+    "dev": "npx nodemon --delay 1000ms ./src/index.ts\n",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "build": "npm run clean && npm run fix && npm run compile",
+    "fix": "gts fix",
+    "prepare": "npm.cmd run compile",
+    "pretest": "npm.cmd run compile",
+    "posttest": "npm.cmd run lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/crypto-js": "^4.2.2",
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.7.5",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "eslint-plugin-node": "^11.1.0",
+    "gts": "^6.0.2",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@types/jsonwebtoken": "^9.0.9",
+    "axios": "^1.9.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "logger-services": "^2.6.5",
+    "moment": "^2.30.1",
+    "moment-timezone": "^0.6.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "tarkus-env-manager": "^1.1.5",
+    "uuid": "^11.1.0"
+  }
+}

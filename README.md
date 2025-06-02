@@ -16,13 +16,24 @@ This is a backend-only Node.js + TypeScript project that integrates a local LLM 
 
 ## 🚀 How It Works
 
-```mermaid
-graph TD
-    A[User Prompt] --> B[LLM (Ollama)]
-    B --> C[Extract Place Names]
-    C --> D[Google Places API]
-    D --> E[Return JSON (embedUrl + directionLink)]
-````
+1. The user sends a natural language prompt, e.g.:
+   > “Best coffee shop in Jakarta
+
+2. The backend sends this prompt to the local LLM (Ollama)
+
+3. The LLM returns a list of place names in text format
+
+4. The backend extracts the place names using a helper function
+
+5. Each place is searched via Google Places API
+
+6. The top results are formatted with:
+   - ✅ Place name
+   - ✅ Address
+   - ✅ Map embed URL
+   - ✅ Google Maps direction link
+
+7. The final data is returned as a JSON response to the frontend
 
 ## 🧪 Sample Response
 

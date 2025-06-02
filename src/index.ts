@@ -15,6 +15,10 @@ app.listen(port, async () => {
     logger.utils.chalk.underline(`http://localhost:${port}`),
   );
   logger.info(
+    `${logger.utils.chalk.yellow('⚡️')} [server]: Doc Running at`,
+    logger.utils.chalk.underline(`http://localhost:${port}/docs`),
+  );
+  logger.info(
     `${logger.utils.chalk.yellow('🛠️')}  [Mode]  : ${logger.utils.chalk.underline(env.APP_ENV)} ${env.APP_DEBUG ? '- DEBUG' : ''}`,
   );
 });

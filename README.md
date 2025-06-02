@@ -1,9 +1,6 @@
-````md
 # 🧠 LLM Smart Search Backend
 
 This is a backend-only Node.js + TypeScript project that integrates a local LLM (via Ollama) and Google Maps API to generate place recommendations from natural language prompts. It returns directions and map embeds via API responses.
-
----
 
 ## 📌 Features
 
@@ -16,8 +13,6 @@ This is a backend-only Node.js + TypeScript project that integrates a local LLM 
   - Place name & address
   - Google Maps **embed URL**
   - Google Maps **directions link**
-
----
 
 ## 🚀 How It Works
 
@@ -47,8 +42,6 @@ graph TD
 }
 ```
 
----
-
 ## 🔧 Requirements
 
 * Node.js v18+
@@ -57,8 +50,6 @@ graph TD
 
   * ✅ Places API enabled
   * ✅ Maps Embed API enabled
-
----
 
 ## 📦 Setup Instructions
 
@@ -97,8 +88,6 @@ graph TD
    npm run dev
    ```
 
----
-
 ## 🔐 Google Maps API Setup
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/)
@@ -110,8 +99,6 @@ graph TD
 4. Create credentials → API Key
 5. Restrict the key to backend IP or service use only
 
----
-
 ## 📘 API Documentation (Swagger)
 
 Visit:
@@ -119,21 +106,15 @@ Visit:
 
 > Documentation is generated using Swagger JSDoc and exposed via `swagger-ui-express`.
 
----
-
 ## 🧠 Prompt Examples
 
 * "Tempat ngopi terbaik di Bandung"
 * "Rekomendasi restoran Jepang di Surabaya"
 * "Museum seni di Jakarta Selatan"
 
----
-
 ## 📎 License
 
 MIT License
-
----
 
 ## ✨ Credits
 
